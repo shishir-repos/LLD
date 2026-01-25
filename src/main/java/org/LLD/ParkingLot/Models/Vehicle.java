@@ -1,0 +1,19 @@
+package org.LLD.ParkingLot.Models;
+
+public class Vehicle {
+    private final String vehicleNumber;
+    private final VehicleType vehicleType;
+
+    Vehicle(String vehicleNumber, VehicleType vehicleType) {
+        this.vehicleNumber = vehicleNumber;
+        this.vehicleType = vehicleType;
+    }
+
+    public VehicleType getVehicleType() {
+        return this.vehicleType;
+    }
+
+    public String getVehicleNumber() {
+        return vehicleNumber;
+    }
+}
