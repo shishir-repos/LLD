@@ -1,6 +1,6 @@
 package org.LLD.ParkingLot.Models;
 
-public class Vehicle {
+public abstract class Vehicle {
     private final String vehicleNumber;
     private final VehicleType vehicleType;
 

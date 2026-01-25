@@ -11,6 +11,10 @@ public class ParkingLotManager {
     private static ParkingLotManager instance;
     private List<ParkingFloor> floors;
 
+    private ParkingLotManager() {
+
+    }
+
     public static synchronized ParkingLotManager getInstance() {
         if (instance == null) {
             instance = new ParkingLotManager();
@@ -26,6 +30,6 @@ public class ParkingLotManager {
     }
 
     public List<ParkingFloor> getFloors() {
-        return floors;
+        return this.floors;
     }
 }

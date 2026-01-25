@@ -26,7 +26,7 @@ public class Main {
         for (int i = 0; i<vehicleCount; i++) {
             if (split[i].trim().equals("C")) {
                 floor1.addSpot(new CarParkingSpot("C" + i));
-            } else {
+            } else if (split[i].trim().equals("B")) {
                 floor1.addSpot(new BikeParkingSpot("B" + i));
             }
         }
